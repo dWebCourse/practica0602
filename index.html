@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 06-02</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!--El atributo defer indica al navegador que no espere por el script.
+        En lugar de ello, debe seguir procesando el HTML, construir el DOM.
+        El script carga “en segundo plano” y se ejecuta cuando el DOM esta completo.-->
+     <!--<script src="./js/scriptIf.js" defer></script>-->
+    <script src="./js/scritpSwitch.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="formRow">
+            <label for="temp">Seleccione la temperatura: </label>
+            <input id="temp" type="number" min="-50" max="60">
+        </div>
+        <div class="formRow">
+            <label for="clima">Seleccione el tipo de clima de hoy: </label>
+            <select id="clima">
+                <option value="">--Haga una elección--</option>
+                <option value="soleado">Soleado</option>
+                <option value="lluvioso">Lluvioso</option>
+                <option value="nevando">Nevando</option>
+                <option value="nublado">Nublado</option>
+            </select>
+        </div>
+
+        <div id="answer"></div>
+    </div>
+</body>
+
+</html>
